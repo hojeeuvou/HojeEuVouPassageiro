@@ -14,7 +14,6 @@ import java.util.*
 class AdapterListaHome : RecyclerView.Adapter<AdapterListaHome.ListaPassageiroViewHolder>() {
 
     private var listaPassageiros = emptyList<ItemListaHome>()
-
     inner class ListaPassageiroViewHolder(private val binding: AdapterListaHomeBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
