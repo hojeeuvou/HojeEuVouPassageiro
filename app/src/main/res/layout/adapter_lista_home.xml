@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvNomeUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Lucas Pacheco"
+                android:textColor="@color/texto_escuro_titulo"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/ivFundoPassageiro"
+                app:layout_constraintTop_toTopOf="@+id/ivFundoPassageiro" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ivFundoPassageiro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="14dp"
+                app:cardBackgroundColor="@color/laranja"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvIniciais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LP"
+                android:elevation="10dp"
+                android:textSize="26sp"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/ivFundoPassageiro"
+                app:layout_constraintEnd_toEndOf="@+id/ivFundoPassageiro"
+                app:layout_constraintStart_toStartOf="@+id/ivFundoPassageiro"
+                app:layout_constraintTop_toTopOf="@+id/ivFundoPassageiro" />
+
+
+            <TextView
+                android:id="@+id/tvStatusAluno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoje eu vou!"
+                android:textColor="@color/verde_claro"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/tvNomeUsuario"
+                app:layout_constraintTop_toBottomOf="@+id/tvNomeUsuario" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
